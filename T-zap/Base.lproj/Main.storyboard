@@ -27,25 +27,16 @@
                                     <constraint firstAttribute="height" constant="122" id="ANk-z9-MV8"/>
                                 </constraints>
                             </pickerView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1sH-1q-gr5">
-                                <rect key="frame" x="0.0" y="139" width="375" height="528"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="m85-li-dkf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4Zx-Ce-w9Z"/>
-                            <constraint firstItem="1sH-1q-gr5" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Cp2-Wh-uQ2"/>
-                            <constraint firstItem="1sH-1q-gr5" firstAttribute="top" secondItem="m85-li-dkf" secondAttribute="bottom" constant="17" id="HT3-9k-PQP"/>
                             <constraint firstAttribute="trailing" secondItem="m85-li-dkf" secondAttribute="trailing" id="Q7i-36-pvU"/>
-                            <constraint firstItem="1sH-1q-gr5" firstAttribute="trailing" secondItem="m85-li-dkf" secondAttribute="trailing" id="YiF-Im-3HO"/>
-                            <constraint firstItem="1sH-1q-gr5" firstAttribute="leading" secondItem="m85-li-dkf" secondAttribute="leading" id="dLc-J5-a2d"/>
                             <constraint firstItem="m85-li-dkf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eR5-vd-8Vs"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="partsAndTimeView" destination="m85-li-dkf" id="tQj-CT-2nJ"/>
-                        <outlet property="tableView" destination="1sH-1q-gr5" id="H7u-LY-PbU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
