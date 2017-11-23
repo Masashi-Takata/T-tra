@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		390019F11EE6CCAD00D042F0 /* UrlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390019F01EE6CCAC00D042F0 /* UrlViewController.swift */; };
+		39001A271EE7DB6E00D042F0 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39001A261EE7DB6E00D042F0 /* CheckBoxView.swift */; };
+		39001A471EE7E56A00D042F0 /* PartsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39001A461EE7E56A00D042F0 /* PartsCollectionViewCell.swift */; };
+		39001A4B1EE7E91D00D042F0 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39001A4A1EE7E91D00D042F0 /* CustomCollectionViewCell.swift */; };
+		3902552B1EEA4B0D0083327C /* シックスパック.png in Resources */ = {isa = PBXBuildFile; fileRef = 3902552A1EEA4B0D0083327C /* シックスパック.png */; };
+		391277321EEA7BA500123EF3 /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391277141EEA7BA500123EF3 /* AsyncButton.swift */; };
+		391277331EEA7BA500123EF3 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391277151EEA7BA500123EF3 /* AsyncImageView.swift */; };
+		391277341EEA7BA500123EF3 /* AutoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391277161EEA7BA500123EF3 /* AutoTextView.swift */; };
+		391277351EEA7BA500123EF3 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391277171EEA7BA500123EF3 /* BlurView.swift */; };
+		391277361EEA7BA500123EF3 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391277181EEA7BA500123EF3 /* DesignableButton.swift */; };
+		391277371EEA7BA500123EF3 /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391277191EEA7BA500123EF3 /* DesignableImageView.swift */; };
+		391277381EEA7BA500123EF3 /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3912771A1EEA7BA500123EF3 /* DesignableLabel.swift */; };
+		391277391EEA7BA500123EF3 /* DesignableTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3912771B1EEA7BA500123EF3 /* DesignableTabBarController.swift */; };
+		3912773A1EEA7BA500123EF3 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3912771C1EEA7BA500123EF3 /* DesignableTextField.swift */; };
+		3912773B1EEA7BA500123EF3 /* DesignableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3912771D1EEA7BA500123EF3 /* DesignableTextView.swift */; };
+		3912773C1EEA7BA500123EF3 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3912771E1EEA7BA500123EF3 /* DesignableView.swift */; };
+		3912773D1EEA7BA500123EF3 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3912771F1EEA7BA500123EF3 /* ImageLoader.swift */; };
+		3912773E1EEA7BA500123EF3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 391277201EEA7BA500123EF3 /* Info.plist */; };
+		3912773F1EEA7BA500123EF3 /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391277211EEA7BA500123EF3 /* KeyboardLayoutConstraint.swift */; };
+		391277401EEA7BA500123EF3 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391277221EEA7BA500123EF3 /* LoadingView.swift */; };
+		391277411EEA7BA500123EF3 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 391277231EEA7BA500123EF3 /* LoadingView.xib */; };
+		391277421EEA7BA500123EF3 /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391277241EEA7BA500123EF3 /* Misc.swift */; };
+		391277431EEA7BA500123EF3 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391277251EEA7BA500123EF3 /* SoundPlayer.swift */; };
+		391277441EEA7BA500123EF3 /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391277271EEA7BA500123EF3 /* Spring.swift */; };
+		391277451EEA7BA500123EF3 /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391277281EEA7BA500123EF3 /* SpringAnimation.swift */; };
+		391277461EEA7BA500123EF3 /* SpringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391277291EEA7BA500123EF3 /* SpringButton.swift */; };
+		391277471EEA7BA500123EF3 /* SpringImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3912772A1EEA7BA500123EF3 /* SpringImageView.swift */; };
+		391277481EEA7BA500123EF3 /* SpringLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3912772B1EEA7BA500123EF3 /* SpringLabel.swift */; };
+		391277491EEA7BA500123EF3 /* SpringTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3912772C1EEA7BA500123EF3 /* SpringTextField.swift */; };
+		3912774A1EEA7BA500123EF3 /* SpringTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3912772D1EEA7BA500123EF3 /* SpringTextView.swift */; };
+		3912774B1EEA7BA500123EF3 /* SpringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3912772E1EEA7BA500123EF3 /* SpringView.swift */; };
+		3912774C1EEA7BA500123EF3 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3912772F1EEA7BA500123EF3 /* TransitionManager.swift */; };
+		3912774D1EEA7BA500123EF3 /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391277301EEA7BA500123EF3 /* TransitionZoom.swift */; };
+		3912774E1EEA7BA500123EF3 /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391277311EEA7BA500123EF3 /* UnwindSegue.swift */; };
+		3917B3001EDAAB9D00CAD284 /* machinedata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3917B2FF1EDAAB9D00CAD284 /* machinedata.csv */; };
+		3917B3D01EE4E93C00CAD284 /* parts.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3917B3CF1EE4E93C00CAD284 /* parts.csv */; };
+		3917B4101EE5254200CAD284 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3917B40F1EE5254200CAD284 /* DataManager.swift */; };
+		394B50911EECAF01006D9238 /* Bench-press-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 394B50901EECAF01006D9238 /* Bench-press-1.png */; };
+		394B50931EECB150006D9238 /* Triceps-kickback-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 394B50921EECB150006D9238 /* Triceps-kickback-1.png */; };
+		394B50951EECC345006D9238 /* Dumbbell-flys-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 394B50941EECC345006D9238 /* Dumbbell-flys-2.png */; };
+		3995933F1FC68C0B0023786F /* T-tra.png in Resources */ = {isa = PBXBuildFile; fileRef = 3995933E1FC68C0B0023786F /* T-tra.png */; };
+		3995935E1FC6943C0023786F /* 腰痛.png in Resources */ = {isa = PBXBuildFile; fileRef = 3995935A1FC6943C0023786F /* 腰痛.png */; };
+		3995935F1FC6943C0023786F /* 肥満.png in Resources */ = {isa = PBXBuildFile; fileRef = 3995935B1FC6943C0023786F /* 肥満.png */; };
+		399593601FC6943C0023786F /* 肩こり.png in Resources */ = {isa = PBXBuildFile; fileRef = 3995935C1FC6943C0023786F /* 肩こり.png */; };
+		399593611FC6943C0023786F /* 髙田.png in Resources */ = {isa = PBXBuildFile; fileRef = 3995935D1FC6943C0023786F /* 髙田.png */; };
+		39DC608B1EE92B7600302FC9 /* 美脚.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DC608A1EE92B7600302FC9 /* 美脚.png */; };
+		39DC608F1EE92C7E00302FC9 /* 姿勢.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DC608E1EE92C7E00302FC9 /* 姿勢.png */; };
+		39DC60911EE92CFB00302FC9 /* プリケツ.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DC60901EE92CFB00302FC9 /* プリケツ.png */; };
+		39DC60991EE9328D00302FC9 /* ショルダープレス.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DC60981EE9328D00302FC9 /* ショルダープレス.png */; };
+		39DC609B1EE9338800302FC9 /* ショルダープレス(バーベル).png in Resources */ = {isa = PBXBuildFile; fileRef = 39DC609A1EE9338800302FC9 /* ショルダープレス(バーベル).png */; };
+		39DC609D1EE9344900302FC9 /* ショルダープレス(ダンベル).png in Resources */ = {isa = PBXBuildFile; fileRef = 39DC609C1EE9344900302FC9 /* ショルダープレス(ダンベル).png */; };
+		39DC609F1EE934C700302FC9 /* Barbell-front-raises-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DC609E1EE934C700302FC9 /* Barbell-front-raises-1.png */; };
+		39DC60A11EE9376A00302FC9 /* Barbell-rear-delt-row-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DC60A01EE9376A00302FC9 /* Barbell-rear-delt-row-2.png */; };
+		39DC60A31EE9394500302FC9 /* Barbell-upright-rows-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DC60A21EE9394500302FC9 /* Barbell-upright-rows-1.png */; };
+		39DC60A51EE93B0F00302FC9 /* Bench_dips_2s.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DC60A41EE93B0F00302FC9 /* Bench_dips_2s.png */; };
+		39DC60A71EE93C1800302FC9 /* Dumbbell-lateral-raises-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DC60A61EE93C1800302FC9 /* Dumbbell-lateral-raises-1.png */; };
+		39DC60A91EE93D1F00302FC9 /* Lying-rear-lateral-raise-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DC60A81EE93D1F00302FC9 /* Lying-rear-lateral-raise-1.png */; };
+		39DC60AB1EE93DB500302FC9 /* Dumbbell-shrugs-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DC60AA1EE93DB500302FC9 /* Dumbbell-shrugs-1.png */; };
+		39DC60AD1EE93E8800302FC9 /* Push-ups-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DC60AC1EE93E8800302FC9 /* Push-ups-2.png */; };
+		39DC60AF1EE93F4B00302FC9 /* Squats-3-2-436x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DC60AE1EE93F4B00302FC9 /* Squats-3-2-436x1024.png */; };
+		39DC60B11EE9407F00302FC9 /* Decline-crunch-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DC60B01EE9407F00302FC9 /* Decline-crunch-2.png */; };
+		39DC60B31EE9415500302FC9 /* Close-grip-front-lat-pull-down-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DC60B21EE9415500302FC9 /* Close-grip-front-lat-pull-down-1.png */; };
+		39DC60B51EE9442E00302FC9 /* Lunges-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DC60B41EE9442E00302FC9 /* Lunges-1.png */; };
+		39DC60B91EE9486E00302FC9 /* Step-ups-2-2-553x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DC60B81EE9486E00302FC9 /* Step-ups-2-2-553x1024.png */; };
+		39DC60BD1EE94FF600302FC9 /* MachineSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DC60BC1EE94FF600302FC9 /* MachineSelectViewController.swift */; };
+		39DC60BF1EE953E400302FC9 /* Narrow-stance-leg-press-1-1024x671.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DC60BE1EE953E400302FC9 /* Narrow-stance-leg-press-1-1024x671.png */; };
+		39DC60C11EE9557A00302FC9 /* Seated-leg-curl-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DC60C01EE9557A00302FC9 /* Seated-leg-curl-2.png */; };
+		39DC60C31EE9563F00302FC9 /* Leg-raises-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DC60C21EE9563F00302FC9 /* Leg-raises-1.png */; };
+		39DC60C71EE957BD00302FC9 /* Side-bend-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DC60C61EE957BD00302FC9 /* Side-bend-1.png */; };
+		39DC60C91EE958E700302FC9 /* Weighted-ball-side-bend-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DC60C81EE958E700302FC9 /* Weighted-ball-side-bend-2.png */; };
+		39DC60CB1EE95A2700302FC9 /* Standing-barbell-calf-raise-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DC60CA1EE95A2700302FC9 /* Standing-barbell-calf-raise-2.png */; };
+		39DC60CD1EE95B4500302FC9 /* Donkey-calf-raises-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DC60CC1EE95B4500302FC9 /* Donkey-calf-raises-2.png */; };
+		39DC60CF1EE95D8D00302FC9 /* Seated-calf-raise-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DC60CE1EE95D8D00302FC9 /* Seated-calf-raise-2.png */; };
+		39DC60D11EE95E6500302FC9 /* Hyperextensions-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DC60D01EE95E6500302FC9 /* Hyperextensions-1.png */; };
+		39DC60D31EE95F4400302FC9 /* Supermans-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DC60D21EE95F4400302FC9 /* Supermans-1.png */; };
+		39DC60D51EE9611B00302FC9 /* Cable-seated-rows-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DC60D41EE9611B00302FC9 /* Cable-seated-rows-1.png */; };
+		39DC60D71EE9620600302FC9 /* Rear-deltoid-row-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DC60D61EE9620600302FC9 /* Rear-deltoid-row-1.png */; };
+		39DC60D91EE962D700302FC9 /* Straight-arm-pullover-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DC60D81EE962D700302FC9 /* Straight-arm-pullover-2.png */; };
+		39DC60DD1EE966FA00302FC9 /* Crunches-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DC60DC1EE966FA00302FC9 /* Crunches-2.png */; };
+		39DC60DF1EE9687C00302FC9 /* Butterfly-machine-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DC60DE1EE9687B00302FC9 /* Butterfly-machine-2.png */; };
+		39DC60E71EE96D6700302FC9 /* Bench-press-2-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DC60E61EE96D6700302FC9 /* Bench-press-2-1.png */; };
+		39DC60E91EE96E0900302FC9 /* ディップス.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DC60E81EE96E0900302FC9 /* ディップス.png */; };
+		39DC60F11EE9735200302FC9 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DC60F01EE9735200302FC9 /* StartViewController.swift */; };
+		827FF6CE1ED17BE40084DB00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827FF6CD1ED17BE40084DB00 /* AppDelegate.swift */; };
+		827FF6D01ED17BE40084DB00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827FF6CF1ED17BE40084DB00 /* ViewController.swift */; };
+		827FF6D31ED17BE40084DB00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 827FF6D11ED17BE40084DB00 /* Main.storyboard */; };
+		827FF6D51ED17BE40084DB00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 827FF6D41ED17BE40084DB00 /* Assets.xcassets */; };
+		827FF6D81ED17BE40084DB00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 827FF6D61ED17BE40084DB00 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		390019F01EE6CCAC00D042F0 /* UrlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlViewController.swift; sourceTree = "<group>"; };
+		39001A261EE7DB6E00D042F0 /* CheckBoxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
+		39001A461EE7E56A00D042F0 /* PartsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartsCollectionViewCell.swift; sourceTree = "<group>"; };
+		39001A4A1EE7E91D00D042F0 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		3902552A1EEA4B0D0083327C /* シックスパック.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "シックスパック.png"; sourceTree = "<group>"; };
+		391277141EEA7BA500123EF3 /* AsyncButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncButton.swift; sourceTree = "<group>"; };
+		391277151EEA7BA500123EF3 /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+		391277161EEA7BA500123EF3 /* AutoTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoTextView.swift; sourceTree = "<group>"; };
+		391277171EEA7BA500123EF3 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		391277181EEA7BA500123EF3 /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		391277191EEA7BA500123EF3 /* DesignableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableImageView.swift; sourceTree = "<group>"; };
+		3912771A1EEA7BA500123EF3 /* DesignableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableLabel.swift; sourceTree = "<group>"; };
+		3912771B1EEA7BA500123EF3 /* DesignableTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTabBarController.swift; sourceTree = "<group>"; };
+		3912771C1EEA7BA500123EF3 /* DesignableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
+		3912771D1EEA7BA500123EF3 /* DesignableTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextView.swift; sourceTree = "<group>"; };
+		3912771E1EEA7BA500123EF3 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		3912771F1EEA7BA500123EF3 /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		391277201EEA7BA500123EF3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		391277211EEA7BA500123EF3 /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
+		391277221EEA7BA500123EF3 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		391277231EEA7BA500123EF3 /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		391277241EEA7BA500123EF3 /* Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
+		391277251EEA7BA500123EF3 /* SoundPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		391277261EEA7BA500123EF3 /* Spring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spring.h; sourceTree = "<group>"; };
+		391277271EEA7BA500123EF3 /* Spring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spring.swift; sourceTree = "<group>"; };
+		391277281EEA7BA500123EF3 /* SpringAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringAnimation.swift; sourceTree = "<group>"; };
+		391277291EEA7BA500123EF3 /* SpringButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringButton.swift; sourceTree = "<group>"; };
+		3912772A1EEA7BA500123EF3 /* SpringImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringImageView.swift; sourceTree = "<group>"; };
+		3912772B1EEA7BA500123EF3 /* SpringLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringLabel.swift; sourceTree = "<group>"; };
+		3912772C1EEA7BA500123EF3 /* SpringTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringTextField.swift; sourceTree = "<group>"; };
+		3912772D1EEA7BA500123EF3 /* SpringTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringTextView.swift; sourceTree = "<group>"; };
+		3912772E1EEA7BA500123EF3 /* SpringView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringView.swift; sourceTree = "<group>"; };
+		3912772F1EEA7BA500123EF3 /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
+		391277301EEA7BA500123EF3 /* TransitionZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionZoom.swift; sourceTree = "<group>"; };
+		391277311EEA7BA500123EF3 /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
+		3917B2FF1EDAAB9D00CAD284 /* machinedata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = machinedata.csv; sourceTree = "<group>"; };
+		3917B3CF1EE4E93C00CAD284 /* parts.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = parts.csv; sourceTree = "<group>"; };
+		3917B40F1EE5254200CAD284 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		394B50901EECAF01006D9238 /* Bench-press-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bench-press-1.png"; sourceTree = "<group>"; };
+		394B50921EECB150006D9238 /* Triceps-kickback-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Triceps-kickback-1.png"; sourceTree = "<group>"; };
+		394B50941EECC345006D9238 /* Dumbbell-flys-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dumbbell-flys-2.png"; sourceTree = "<group>"; };
+		3995933E1FC68C0B0023786F /* T-tra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "T-tra.png"; sourceTree = "<group>"; };
+		3995935A1FC6943C0023786F /* 腰痛.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "腰痛.png"; sourceTree = "<group>"; };
+		3995935B1FC6943C0023786F /* 肥満.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "肥満.png"; sourceTree = "<group>"; };
+		3995935C1FC6943C0023786F /* 肩こり.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "肩こり.png"; sourceTree = "<group>"; };
+		3995935D1FC6943C0023786F /* 髙田.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "髙田.png"; sourceTree = "<group>"; };
+		39DC608A1EE92B7600302FC9 /* 美脚.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "美脚.png"; sourceTree = "<group>"; };
+		39DC608E1EE92C7E00302FC9 /* 姿勢.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "姿勢.png"; sourceTree = "<group>"; };
+		39DC60901EE92CFB00302FC9 /* プリケツ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "プリケツ.png"; sourceTree = "<group>"; };
+		39DC60981EE9328D00302FC9 /* ショルダープレス.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ショルダープレス.png"; sourceTree = "<group>"; };
+		39DC609A1EE9338800302FC9 /* ショルダープレス(バーベル).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ショルダープレス(バーベル).png"; sourceTree = "<group>"; };
+		39DC609C1EE9344900302FC9 /* ショルダープレス(ダンベル).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ショルダープレス(ダンベル).png"; sourceTree = "<group>"; };
+		39DC609E1EE934C700302FC9 /* Barbell-front-raises-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Barbell-front-raises-1.png"; sourceTree = "<group>"; };
+		39DC60A01EE9376A00302FC9 /* Barbell-rear-delt-row-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Barbell-rear-delt-row-2.png"; sourceTree = "<group>"; };
+		39DC60A21EE9394500302FC9 /* Barbell-upright-rows-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Barbell-upright-rows-1.png"; sourceTree = "<group>"; };
+		39DC60A41EE93B0F00302FC9 /* Bench_dips_2s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bench_dips_2s.png; sourceTree = "<group>"; };
+		39DC60A61EE93C1800302FC9 /* Dumbbell-lateral-raises-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dumbbell-lateral-raises-1.png"; sourceTree = "<group>"; };
+		39DC60A81EE93D1F00302FC9 /* Lying-rear-lateral-raise-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lying-rear-lateral-raise-1.png"; sourceTree = "<group>"; };
+		39DC60AA1EE93DB500302FC9 /* Dumbbell-shrugs-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dumbbell-shrugs-1.png"; sourceTree = "<group>"; };
+		39DC60AC1EE93E8800302FC9 /* Push-ups-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Push-ups-2.png"; sourceTree = "<group>"; };
+		39DC60AE1EE93F4B00302FC9 /* Squats-3-2-436x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Squats-3-2-436x1024.png"; sourceTree = "<group>"; };
+		39DC60B01EE9407F00302FC9 /* Decline-crunch-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Decline-crunch-2.png"; sourceTree = "<group>"; };
+		39DC60B21EE9415500302FC9 /* Close-grip-front-lat-pull-down-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Close-grip-front-lat-pull-down-1.png"; sourceTree = "<group>"; };
+		39DC60B41EE9442E00302FC9 /* Lunges-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lunges-1.png"; sourceTree = "<group>"; };
+		39DC60B81EE9486E00302FC9 /* Step-ups-2-2-553x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Step-ups-2-2-553x1024.png"; sourceTree = "<group>"; };
+		39DC60BC1EE94FF600302FC9 /* MachineSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MachineSelectViewController.swift; sourceTree = "<group>"; };
+		39DC60BE1EE953E400302FC9 /* Narrow-stance-leg-press-1-1024x671.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Narrow-stance-leg-press-1-1024x671.png"; sourceTree = "<group>"; };
+		39DC60C01EE9557A00302FC9 /* Seated-leg-curl-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seated-leg-curl-2.png"; sourceTree = "<group>"; };
+		39DC60C21EE9563F00302FC9 /* Leg-raises-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Leg-raises-1.png"; sourceTree = "<group>"; };
+		39DC60C61EE957BD00302FC9 /* Side-bend-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Side-bend-1.png"; sourceTree = "<group>"; };
+		39DC60C81EE958E700302FC9 /* Weighted-ball-side-bend-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Weighted-ball-side-bend-2.png"; sourceTree = "<group>"; };
+		39DC60CA1EE95A2700302FC9 /* Standing-barbell-calf-raise-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Standing-barbell-calf-raise-2.png"; sourceTree = "<group>"; };
+		39DC60CC1EE95B4500302FC9 /* Donkey-calf-raises-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Donkey-calf-raises-2.png"; sourceTree = "<group>"; };
+		39DC60CE1EE95D8D00302FC9 /* Seated-calf-raise-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seated-calf-raise-2.png"; sourceTree = "<group>"; };
+		39DC60D01EE95E6500302FC9 /* Hyperextensions-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hyperextensions-1.png"; sourceTree = "<group>"; };
+		39DC60D21EE95F4400302FC9 /* Supermans-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Supermans-1.png"; sourceTree = "<group>"; };
+		39DC60D41EE9611B00302FC9 /* Cable-seated-rows-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cable-seated-rows-1.png"; sourceTree = "<group>"; };
+		39DC60D61EE9620600302FC9 /* Rear-deltoid-row-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rear-deltoid-row-1.png"; sourceTree = "<group>"; };
+		39DC60D81EE962D700302FC9 /* Straight-arm-pullover-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Straight-arm-pullover-2.png"; sourceTree = "<group>"; };
+		39DC60DC1EE966FA00302FC9 /* Crunches-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Crunches-2.png"; sourceTree = "<group>"; };
+		39DC60DE1EE9687B00302FC9 /* Butterfly-machine-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Butterfly-machine-2.png"; sourceTree = "<group>"; };
+		39DC60E61EE96D6700302FC9 /* Bench-press-2-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bench-press-2-1.png"; sourceTree = "<group>"; };
+		39DC60E81EE96E0900302FC9 /* ディップス.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ディップス.png"; sourceTree = "<group>"; };
+		39DC60F01EE9735200302FC9 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		827FF6CA1ED17BE40084DB00 /* T-tra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "T-tra.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		827FF6CD1ED17BE40084DB00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		827FF6CF1ED17BE40084DB00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		827FF6D21ED17BE40084DB00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		827FF6D41ED17BE40084DB00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		827FF6D71ED17BE40084DB00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		827FF6D91ED17BE40084DB00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		827FF6C71ED17BE40084DB00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		391277131EEA7BA500123EF3 /* Spring */ = {
+			isa = PBXGroup;
+			children = (
+				391277141EEA7BA500123EF3 /* AsyncButton.swift */,
+				391277151EEA7BA500123EF3 /* AsyncImageView.swift */,
+				391277161EEA7BA500123EF3 /* AutoTextView.swift */,
+				391277171EEA7BA500123EF3 /* BlurView.swift */,
+				391277181EEA7BA500123EF3 /* DesignableButton.swift */,
+				391277191EEA7BA500123EF3 /* DesignableImageView.swift */,
+				3912771A1EEA7BA500123EF3 /* DesignableLabel.swift */,
+				3912771B1EEA7BA500123EF3 /* DesignableTabBarController.swift */,
+				3912771C1EEA7BA500123EF3 /* DesignableTextField.swift */,
+				3912771D1EEA7BA500123EF3 /* DesignableTextView.swift */,
+				3912771E1EEA7BA500123EF3 /* DesignableView.swift */,
+				3912771F1EEA7BA500123EF3 /* ImageLoader.swift */,
+				391277201EEA7BA500123EF3 /* Info.plist */,
+				391277211EEA7BA500123EF3 /* KeyboardLayoutConstraint.swift */,
+				391277221EEA7BA500123EF3 /* LoadingView.swift */,
+				391277231EEA7BA500123EF3 /* LoadingView.xib */,
+				391277241EEA7BA500123EF3 /* Misc.swift */,
+				391277251EEA7BA500123EF3 /* SoundPlayer.swift */,
+				391277261EEA7BA500123EF3 /* Spring.h */,
+				391277271EEA7BA500123EF3 /* Spring.swift */,
+				391277281EEA7BA500123EF3 /* SpringAnimation.swift */,
+				391277291EEA7BA500123EF3 /* SpringButton.swift */,
+				3912772A1EEA7BA500123EF3 /* SpringImageView.swift */,
+				3912772B1EEA7BA500123EF3 /* SpringLabel.swift */,
+				3912772C1EEA7BA500123EF3 /* SpringTextField.swift */,
+				3912772D1EEA7BA500123EF3 /* SpringTextView.swift */,
+				3912772E1EEA7BA500123EF3 /* SpringView.swift */,
+				3912772F1EEA7BA500123EF3 /* TransitionManager.swift */,
+				391277301EEA7BA500123EF3 /* TransitionZoom.swift */,
+				391277311EEA7BA500123EF3 /* UnwindSegue.swift */,
+			);
+			path = Spring;
+			sourceTree = "<group>";
+		};
+		827FF6C11ED17BE40084DB00 = {
+			isa = PBXGroup;
+			children = (
+				827FF6CC1ED17BE40084DB00 /* T-tra */,
+				827FF6CB1ED17BE40084DB00 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		827FF6CB1ED17BE40084DB00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				827FF6CA1ED17BE40084DB00 /* T-tra.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		827FF6CC1ED17BE40084DB00 /* T-tra */ = {
+			isa = PBXGroup;
+			children = (
+				391277131EEA7BA500123EF3 /* Spring */,
+				827FF6D11ED17BE40084DB00 /* Main.storyboard */,
+				39DC60F01EE9735200302FC9 /* StartViewController.swift */,
+				827FF6CF1ED17BE40084DB00 /* ViewController.swift */,
+				39DC60BC1EE94FF600302FC9 /* MachineSelectViewController.swift */,
+				390019F01EE6CCAC00D042F0 /* UrlViewController.swift */,
+				3917B40F1EE5254200CAD284 /* DataManager.swift */,
+				39001A261EE7DB6E00D042F0 /* CheckBoxView.swift */,
+				39001A4A1EE7E91D00D042F0 /* CustomCollectionViewCell.swift */,
+				39001A461EE7E56A00D042F0 /* PartsCollectionViewCell.swift */,
+				827FF6CD1ED17BE40084DB00 /* AppDelegate.swift */,
+				3917B3CF1EE4E93C00CAD284 /* parts.csv */,
+				3917B2FF1EDAAB9D00CAD284 /* machinedata.csv */,
+				827FF6D41ED17BE40084DB00 /* Assets.xcassets */,
+				827FF6D61ED17BE40084DB00 /* LaunchScreen.storyboard */,
+				827FF6D91ED17BE40084DB00 /* Info.plist */,
+				39DC609A1EE9338800302FC9 /* ショルダープレス(バーベル).png */,
+				3902552A1EEA4B0D0083327C /* シックスパック.png */,
+				394B50941EECC345006D9238 /* Dumbbell-flys-2.png */,
+				3995933E1FC68C0B0023786F /* T-tra.png */,
+				39DC608A1EE92B7600302FC9 /* 美脚.png */,
+				39DC608E1EE92C7E00302FC9 /* 姿勢.png */,
+				39DC60901EE92CFB00302FC9 /* プリケツ.png */,
+				3995935C1FC6943C0023786F /* 肩こり.png */,
+				3995935A1FC6943C0023786F /* 腰痛.png */,
+				3995935B1FC6943C0023786F /* 肥満.png */,
+				3995935D1FC6943C0023786F /* 髙田.png */,
+				394B50921EECB150006D9238 /* Triceps-kickback-1.png */,
+				394B50901EECAF01006D9238 /* Bench-press-1.png */,
+				39DC60981EE9328D00302FC9 /* ショルダープレス.png */,
+				39DC609C1EE9344900302FC9 /* ショルダープレス(ダンベル).png */,
+				39DC609E1EE934C700302FC9 /* Barbell-front-raises-1.png */,
+				39DC60A01EE9376A00302FC9 /* Barbell-rear-delt-row-2.png */,
+				39DC60A21EE9394500302FC9 /* Barbell-upright-rows-1.png */,
+				39DC60A41EE93B0F00302FC9 /* Bench_dips_2s.png */,
+				39DC60A61EE93C1800302FC9 /* Dumbbell-lateral-raises-1.png */,
+				39DC60A81EE93D1F00302FC9 /* Lying-rear-lateral-raise-1.png */,
+				39DC60AA1EE93DB500302FC9 /* Dumbbell-shrugs-1.png */,
+				39DC60AC1EE93E8800302FC9 /* Push-ups-2.png */,
+				39DC60AE1EE93F4B00302FC9 /* Squats-3-2-436x1024.png */,
+				39DC60B01EE9407F00302FC9 /* Decline-crunch-2.png */,
+				39DC60B21EE9415500302FC9 /* Close-grip-front-lat-pull-down-1.png */,
+				39DC60B41EE9442E00302FC9 /* Lunges-1.png */,
+				39DC60B81EE9486E00302FC9 /* Step-ups-2-2-553x1024.png */,
+				39DC60BE1EE953E400302FC9 /* Narrow-stance-leg-press-1-1024x671.png */,
+				39DC60C01EE9557A00302FC9 /* Seated-leg-curl-2.png */,
+				39DC60C21EE9563F00302FC9 /* Leg-raises-1.png */,
+				39DC60C61EE957BD00302FC9 /* Side-bend-1.png */,
+				39DC60C81EE958E700302FC9 /* Weighted-ball-side-bend-2.png */,
+				39DC60CA1EE95A2700302FC9 /* Standing-barbell-calf-raise-2.png */,
+				39DC60CC1EE95B4500302FC9 /* Donkey-calf-raises-2.png */,
+				39DC60CE1EE95D8D00302FC9 /* Seated-calf-raise-2.png */,
+				39DC60D01EE95E6500302FC9 /* Hyperextensions-1.png */,
+				39DC60D21EE95F4400302FC9 /* Supermans-1.png */,
+				39DC60D41EE9611B00302FC9 /* Cable-seated-rows-1.png */,
+				39DC60D61EE9620600302FC9 /* Rear-deltoid-row-1.png */,
+				39DC60D81EE962D700302FC9 /* Straight-arm-pullover-2.png */,
+				39DC60DC1EE966FA00302FC9 /* Crunches-2.png */,
+				39DC60DE1EE9687B00302FC9 /* Butterfly-machine-2.png */,
+				39DC60E61EE96D6700302FC9 /* Bench-press-2-1.png */,
+				39DC60E81EE96E0900302FC9 /* ディップス.png */,
+			);
+			name = "T-tra";
+			path = "T-zap";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		827FF6C91ED17BE40084DB00 /* T-tra */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 827FF6DC1ED17BE40084DB00 /* Build configuration list for PBXNativeTarget "T-tra" */;
+			buildPhases = (
+				827FF6C61ED17BE40084DB00 /* Sources */,
+				827FF6C71ED17BE40084DB00 /* Frameworks */,
+				827FF6C81ED17BE40084DB00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "T-tra";
+			productName = "T-zap";
+			productReference = 827FF6CA1ED17BE40084DB00 /* T-tra.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		827FF6C21ED17BE40084DB00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Masashi Takata";
+				TargetAttributes = {
+					827FF6C91ED17BE40084DB00 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = G6U94S7XQK;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 827FF6C51ED17BE40084DB00 /* Build configuration list for PBXProject "T-tra" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 827FF6C11ED17BE40084DB00;
+			productRefGroup = 827FF6CB1ED17BE40084DB00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				827FF6C91ED17BE40084DB00 /* T-tra */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		827FF6C81ED17BE40084DB00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				399593601FC6943C0023786F /* 肩こり.png in Resources */,
+				39DC60E91EE96E0900302FC9 /* ディップス.png in Resources */,
+				39DC608B1EE92B7600302FC9 /* 美脚.png in Resources */,
+				3995935E1FC6943C0023786F /* 腰痛.png in Resources */,
+				39DC60C91EE958E700302FC9 /* Weighted-ball-side-bend-2.png in Resources */,
+				39DC60DF1EE9687C00302FC9 /* Butterfly-machine-2.png in Resources */,
+				827FF6D81ED17BE40084DB00 /* LaunchScreen.storyboard in Resources */,
+				39DC60911EE92CFB00302FC9 /* プリケツ.png in Resources */,
+				394B50951EECC345006D9238 /* Dumbbell-flys-2.png in Resources */,
+				39DC60E71EE96D6700302FC9 /* Bench-press-2-1.png in Resources */,
+				39DC60CB1EE95A2700302FC9 /* Standing-barbell-calf-raise-2.png in Resources */,
+				39DC60B11EE9407F00302FC9 /* Decline-crunch-2.png in Resources */,
+				39DC609B1EE9338800302FC9 /* ショルダープレス(バーベル).png in Resources */,
+				394B50911EECAF01006D9238 /* Bench-press-1.png in Resources */,
+				394B50931EECB150006D9238 /* Triceps-kickback-1.png in Resources */,
+				39DC609D1EE9344900302FC9 /* ショルダープレス(ダンベル).png in Resources */,
+				39DC60C31EE9563F00302FC9 /* Leg-raises-1.png in Resources */,
+				39DC60D71EE9620600302FC9 /* Rear-deltoid-row-1.png in Resources */,
+				39DC60A31EE9394500302FC9 /* Barbell-upright-rows-1.png in Resources */,
+				827FF6D51ED17BE40084DB00 /* Assets.xcassets in Resources */,
+				39DC60D51EE9611B00302FC9 /* Cable-seated-rows-1.png in Resources */,
+				3995935F1FC6943C0023786F /* 肥満.png in Resources */,
+				39DC60A51EE93B0F00302FC9 /* Bench_dips_2s.png in Resources */,
+				39DC60991EE9328D00302FC9 /* ショルダープレス.png in Resources */,
+				39DC60B51EE9442E00302FC9 /* Lunges-1.png in Resources */,
+				39DC60C11EE9557A00302FC9 /* Seated-leg-curl-2.png in Resources */,
+				399593611FC6943C0023786F /* 髙田.png in Resources */,
+				39DC60C71EE957BD00302FC9 /* Side-bend-1.png in Resources */,
+				39DC60AF1EE93F4B00302FC9 /* Squats-3-2-436x1024.png in Resources */,
+				39DC60AB1EE93DB500302FC9 /* Dumbbell-shrugs-1.png in Resources */,
+				39DC60A11EE9376A00302FC9 /* Barbell-rear-delt-row-2.png in Resources */,
+				39DC609F1EE934C700302FC9 /* Barbell-front-raises-1.png in Resources */,
+				39DC60CD1EE95B4500302FC9 /* Donkey-calf-raises-2.png in Resources */,
+				39DC60B91EE9486E00302FC9 /* Step-ups-2-2-553x1024.png in Resources */,
+				391277411EEA7BA500123EF3 /* LoadingView.xib in Resources */,
+				3912773E1EEA7BA500123EF3 /* Info.plist in Resources */,
+				39DC60DD1EE966FA00302FC9 /* Crunches-2.png in Resources */,
+				39DC60CF1EE95D8D00302FC9 /* Seated-calf-raise-2.png in Resources */,
+				39DC60BF1EE953E400302FC9 /* Narrow-stance-leg-press-1-1024x671.png in Resources */,
+				3917B3D01EE4E93C00CAD284 /* parts.csv in Resources */,
+				3995933F1FC68C0B0023786F /* T-tra.png in Resources */,
+				39DC608F1EE92C7E00302FC9 /* 姿勢.png in Resources */,
+				39DC60D31EE95F4400302FC9 /* Supermans-1.png in Resources */,
+				39DC60A91EE93D1F00302FC9 /* Lying-rear-lateral-raise-1.png in Resources */,
+				39DC60D91EE962D700302FC9 /* Straight-arm-pullover-2.png in Resources */,
+				39DC60A71EE93C1800302FC9 /* Dumbbell-lateral-raises-1.png in Resources */,
+				827FF6D31ED17BE40084DB00 /* Main.storyboard in Resources */,
+				39DC60B31EE9415500302FC9 /* Close-grip-front-lat-pull-down-1.png in Resources */,
+				39DC60D11EE95E6500302FC9 /* Hyperextensions-1.png in Resources */,
+				39DC60AD1EE93E8800302FC9 /* Push-ups-2.png in Resources */,
+				3902552B1EEA4B0D0083327C /* シックスパック.png in Resources */,
+				3917B3001EDAAB9D00CAD284 /* machinedata.csv in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		827FF6C61ED17BE40084DB00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				391277461EEA7BA500123EF3 /* SpringButton.swift in Sources */,
+				391277431EEA7BA500123EF3 /* SoundPlayer.swift in Sources */,
+				3912774A1EEA7BA500123EF3 /* SpringTextView.swift in Sources */,
+				39DC60BD1EE94FF600302FC9 /* MachineSelectViewController.swift in Sources */,
+				3912773A1EEA7BA500123EF3 /* DesignableTextField.swift in Sources */,
+				3912773B1EEA7BA500123EF3 /* DesignableTextView.swift in Sources */,
+				3912774D1EEA7BA500123EF3 /* TransitionZoom.swift in Sources */,
+				391277491EEA7BA500123EF3 /* SpringTextField.swift in Sources */,
+				391277371EEA7BA500123EF3 /* DesignableImageView.swift in Sources */,
+				39001A271EE7DB6E00D042F0 /* CheckBoxView.swift in Sources */,
+				39001A471EE7E56A00D042F0 /* PartsCollectionViewCell.swift in Sources */,
+				390019F11EE6CCAD00D042F0 /* UrlViewController.swift in Sources */,
+				39001A4B1EE7E91D00D042F0 /* CustomCollectionViewCell.swift in Sources */,
+				3912773C1EEA7BA500123EF3 /* DesignableView.swift in Sources */,
+				391277421EEA7BA500123EF3 /* Misc.swift in Sources */,
+				391277331EEA7BA500123EF3 /* AsyncImageView.swift in Sources */,
+				391277391EEA7BA500123EF3 /* DesignableTabBarController.swift in Sources */,
+				391277341EEA7BA500123EF3 /* AutoTextView.swift in Sources */,
+				3912774E1EEA7BA500123EF3 /* UnwindSegue.swift in Sources */,
+				3912774B1EEA7BA500123EF3 /* SpringView.swift in Sources */,
+				391277481EEA7BA500123EF3 /* SpringLabel.swift in Sources */,
+				39DC60F11EE9735200302FC9 /* StartViewController.swift in Sources */,
+				3912773F1EEA7BA500123EF3 /* KeyboardLayoutConstraint.swift in Sources */,
+				391277321EEA7BA500123EF3 /* AsyncButton.swift in Sources */,
+				3912773D1EEA7BA500123EF3 /* ImageLoader.swift in Sources */,
+				391277441EEA7BA500123EF3 /* Spring.swift in Sources */,
+				3912774C1EEA7BA500123EF3 /* TransitionManager.swift in Sources */,
+				391277361EEA7BA500123EF3 /* DesignableButton.swift in Sources */,
+				391277351EEA7BA500123EF3 /* BlurView.swift in Sources */,
+				3917B4101EE5254200CAD284 /* DataManager.swift in Sources */,
+				827FF6D01ED17BE40084DB00 /* ViewController.swift in Sources */,
+				391277381EEA7BA500123EF3 /* DesignableLabel.swift in Sources */,
+				391277451EEA7BA500123EF3 /* SpringAnimation.swift in Sources */,
+				827FF6CE1ED17BE40084DB00 /* AppDelegate.swift in Sources */,
+				391277401EEA7BA500123EF3 /* LoadingView.swift in Sources */,
+				391277471EEA7BA500123EF3 /* SpringImageView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		827FF6D11ED17BE40084DB00 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				827FF6D21ED17BE40084DB00 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		827FF6D61ED17BE40084DB00 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				827FF6D71ED17BE40084DB00 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		827FF6DA1ED17BE40084DB00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		827FF6DB1ED17BE40084DB00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		827FF6DD1ED17BE40084DB00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G6U94S7XQK;
+				INFOPLIST_FILE = "T-zap/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "wmasashitakataw.T-tra";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		827FF6DE1ED17BE40084DB00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G6U94S7XQK;
+				INFOPLIST_FILE = "T-zap/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "wmasashitakataw.T-tra";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		827FF6C51ED17BE40084DB00 /* Build configuration list for PBXProject "T-tra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				827FF6DA1ED17BE40084DB00 /* Debug */,
+				827FF6DB1ED17BE40084DB00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		827FF6DC1ED17BE40084DB00 /* Build configuration list for PBXNativeTarget "T-tra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				827FF6DD1ED17BE40084DB00 /* Debug */,
+				827FF6DE1ED17BE40084DB00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 827FF6C21ED17BE40084DB00 /* Project object */;
+}

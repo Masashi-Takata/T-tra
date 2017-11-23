@@ -8,141 +8,125 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIPickerViewDelegate, UIPickerViewDataSource {
-    
-    @IBOutlet weak var partsAndTimeView: UIPickerView!
+class ViewController: UIViewController, UICollectionViewDelegate,UICollectionViewDataSource {
     
     
-    @IBOutlet weak var tableView: UITableView!
+    var myCollectionView2:UICollectionView!  //マシン設定
+
+    @IBAction func goBack(_ segue:UIStoryboardSegue) {
     
-    
-    
-    
-    //マシン名
-    var machine = ["ベンチプレス","ラットプルマシン", "ローイングマシン", "ペックデック", "ディップススタンド", "マルチプレス", "レッグプレスマシン", "カーフレイズマシン", "リアデルトマシン","レッグエクステンションマシン","レッグカールマシン"]
-    
+    }
+        
     //選択されたcellのindexPath.rowを保存しておくarray
-    var machineindex: Array<Int> = []
+    var partsIndex: Array<Int> = []
     
-    //コンポーネントに表示する項目名
-    let compos = [["30分","60分","90分"],["腕","肩","背中","胸","腹筋","全身","上半身","下半身"]]
-    
-    //ピッカービューのコンポーネントの個数を返す
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return compos.count  //2を返すので，コンポーネントは2個作られる
-    }
-    
-    //各コンポーネントの行数を返す
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        let compo = compos[component]  //値が入った配列を取り出す
-        return compo.count  //値の個数が行数になります
-    }
-    
-    //各コンポーネントの横幅を返す
-    func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
-        //1個目のコンポーネント
-        if component == 0 {
-            //筋トレ時間
-            return 100
-        } else {
-            //鍛えたい部位
-            return 100
-        }
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        //指定のコンポーネントから指定行の項目名を取り出す
-        let item = compos[component][row]  //２次元配列から値を取り出す
-        return item
-    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        PartsDataManager.sharedInstance.loadParts()  //部位のcsvファイルを読み込む処理
+        self.view.backgroundColor = UIColor.white
+        // CollectionViewCellのレイアウトを生成.
+        let layout = UICollectionViewFlowLayout()
+        layout.itemSize = CGSize(width: self.view.frame.width / 2.3, height: self.view.frame.width / 2.7) //セルのサイズ
+        layout.sectionInset = UIEdgeInsetsMake(5, 10, 5, 10)  //セルの余白(上, 左, 下, 右)
+        layout.headerReferenceSize = CGSize(width: 0,height: 0)  //セルのヘッダーサイズ
+        layout.footerReferenceSize = CGSize(width: 0,height: 0)  //セルのフッダーサイズ
         
-        //ViewControllerクラスがpartsAndTimeViewのデリゲートになる（命令する）
-        partsAndTimeView.delegate = self
-        //ViewControllerクラスがpartsAndTimeViewのデータソースになる(サイズ変更する)
-        partsAndTimeView.dataSource = self
         
+        // CollectionViewを生成.
+        let frame = CGRect(x:0, y:20, width:self.view.frame.width, height:self.view.frame.height/5*4.6)  //定数frameに大きさを入れる
+        myCollectionView2 = UICollectionView(frame: frame, collectionViewLayout: layout)  //myCollectionViewの大きさをframeにする
+        myCollectionView2.register(PartsCollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
         
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        myCollectionView2.delegate = self
+        myCollectionView2.dataSource = self
         
-        tableView.dataSource = self
-        tableView.delegate = self
+        myCollectionView2.backgroundColor = UIColor.orange
         
-        // trueで複数選択、falseで単一選択
-        tableView.allowsMultipleSelection = true
+        myCollectionView2.allowsMultipleSelection = true
         
-        tableView.tableFooterView = UIView(frame: .zero)
-        
-        self.view.addSubview(tableView)
+        self.view.addSubview(myCollectionView2)  //ViewにCollectionViewを生成
     }
     
-    // セルが選択された時に呼び出される
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cell = tableView.cellForRow(at:indexPath)
-        
-        // チェックマークを入れる
-        cell?.accessoryType = .checkmark
-        //チェックしたやつをmachineindexに入れる
-        machineindex.append(indexPath.row)
-        
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return PartsDataManager.sharedInstance.partsDataArray.count  //セルの数を返す
     }
     
-    // セルの選択が外れた時に呼び出される
-    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        let cell = tableView.cellForRow(at:indexPath)
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! PartsCollectionViewCell
+        //ここでcell.testViewなどcellのbackgroundViewにあるViewになにか必要な要素を配置する
+        let partsData = PartsDataManager.sharedInstance.partsDataArray[indexPath.row]  //CSVファイルのマシンデータが定数machineDataに設定する
         
-        // チェックマークを外す
-        cell?.accessoryType = .none
-        //チェックしていないやつをmachineindexから外す
-        machineindex.remove(object: indexPath.row)
-    }
-    
-    // セルの数を返す
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return machine.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "\(machine[indexPath.row])"
-        
-        //self.machineindex.count >= 1はmachineindexに配列があるか
-        //self.machineindex.contains(indexPath.row)はmachineindexにindexPath.rowが含まれてたら
-        if (self.machineindex.count >= 1) && self.machineindex.contains(indexPath.row)  {
-            cell.accessoryType = .checkmark //チェックマークを入れる
-            }
-        else {
-            cell.accessoryType = .none  //チェックマークを外す
-
-        }
-        
-        // セルが選択された時の背景色を消す
-        cell.selectionStyle = UITableViewCellSelectionStyle.none
+        cell.imageView?.image = partsData.image  //マシンの画像をセルのイメージに入れる
+        cell.imageView!.contentMode = .scaleAspectFit  // これは縦横比を維持したままImageViewに収まるように縮小する設定
+        self.view.sendSubview(toBack: cell.imageView!)
+        cell.label.text = partsData.parts
         return cell
     }
-}
-extension Array where Element: Equatable {
     
-    // 先頭のオブジェクトのみ削除
-    mutating func remove(firstObject: Element) {
-        if let index = index(of: firstObject) {
-            remove(at: index)
+    //選択された時に呼ばれる
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! PartsCollectionViewCell
+        print(cell.isSelected)
+        
+        //選択された時に選択されているCellのindexPathを表示
+        let selecteditems = self.myCollectionView2.indexPathsForSelectedItems
+        print(selecteditems as Any)
+        
+        //チェックしたやつをmachineindexに入れる
+        partsIndex.append(indexPath.row)
+    }
+    //選択状態から非選択状態になった時に呼ばれる.
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! PartsCollectionViewCell
+        print(cell.isSelected)
+        
+        partsIndex.remove(at: partsIndex.index(of: indexPath.row)!)  //非選択状態になった配列番号をindex(of: indexPath.row)で探してそれをpartsIndexからremoveする
+    }
+
+    
+    
+    
+    
+    
+    //設定画面で選択した時間をメニュー表示画面に移す
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "toMachineSelectViewController") {
+            let secondViewController : MachineSelectViewController = segue.destination as! MachineSelectViewController  //セグエ先をMachineSelectViewControllerに設定し，そのViewCotrollerをMachineSelectViewController型変数secondViewControllerに入れる
+            secondViewController.partsIndex = self.partsIndex  //ViewCotrollerの変数partsIndexをセグエ先のMachineSelectViewControllerのpartsIndexに入れる
         }
     }
     
-    // すべてのオブジェクトを削除
-    mutating func remove(object: Element) {
-        if let index = index(of: object){
-            self.remove(at: index)
-            self.remove(object: object)
-        }
-    }
-    
 }
+
+
+////arrayの中での関数
+//extension Array where Element: Equatable {
+//    
+//    // 先頭のオブジェクトのみ削除
+//    mutating func remove(firstObject: Element) {
+//        if let index = index(of: firstObject) {
+//            remove(at: index)
+//        }
+//    }
+//    
+//    // すべてのオブジェクトを削除
+//    mutating func remove(object: Element) {
+//        if let index = index(of: object){
+//            self.remove(at: index)
+//            self.remove(object: object)
+//        }
+//    }
+//    
+//}
+
+
+
+
+    
+    
+
 
 
 
